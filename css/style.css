@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+.search-box {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 80px;
+    background: #7e6930;
+    opacity: 0.815;
+    transform: translate(-50.2%, -50%);
+    width: 900px;
+    height: 60px;
+}
+
+.search-btn:hover {
+    transform: translate(+6px, -6px);
+    width: 72px;
+    height: 72px;
+    font-size: 28.8px;
+}
+
+.search-btn {
+    color: #7e6930;
+    border:none;
+    outline:none;
+    font-size: 24px;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #212224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+#search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    width: 807px;
+    transform: translate(0%, 23%);
+    padding-left: 20px;
+    color: #212224;
+    font-size: 32px;
+}
+
+.top-box {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50.2%);
+    text-align: center;
+    color: #7e6930;
+    opacity: 0.9;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 29pt;
+    line-height: 0;
+}
+
+#time {
+    font-size: 300%;
+    position: absolute;
+    bottom: 37%;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+#weather {
+    line-height: 7;
+}
+
+.bottom-box {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 80px;
+    background: #7e6930;
+    opacity: 0.785;
+    transform: translate(-50.2%, -50%);
+    width: 685px;
+    height: 110px;
+}
+
+.shortcut-btn:hover {
+    transform: translate(-5px, -5px);
+    width: 120px;
+    height: 120px;
+    font-size: 53px;
+}
+
+.shortcut-btn {
+    color: #7e6930;
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(5px, 5px);
+    border-radius: 50%;
+    background: #212224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+#sh-2 {
+    left: 125px;
+}
+
+#sh-3 {
+    left: 240px;
+}
+
+#sh-4 {
+    left: 355px;
+}
+
+#sh-5 {
+    left: 470px;
+}
+
+#sh-6 {
+    left: 585px
+}

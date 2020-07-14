@@ -1,1 +1,43 @@
-<h1>Hello word</h1>
+<!DOCTYPE html>
+<html lang='en'> 
+
+<html>
+
+<head>
+    <meta charset='utf-8'/>
+    <title>Dashboard</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/background.css'>
+    <script src='https://kit.fontawesome.com/37cfc7d637.js' crossorigin='anonymous'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class='top-box'>
+        <p id='date'></p>
+        <p id='time'>2398420</p>
+        <p id='weather'><i id='weather-icon' class='fas'></i> <i id='wind-icon' class='fas'></i> <span id='weather-text'></span></p>
+    </div>
+
+    <form autocomplete='off' id='search-form'>
+        <div class='search-box'>
+            <input id='search-txt' type='text' name='search' placeholder='Search' autofocus>
+            <button type='submit' class='search-btn' value=''> <i class='fas fa-search'></i> </button>
+        </div>
+    </form>
+
+    <div class='bottom-box'>
+        <a href='https://github.com/Gobbbby?tab=repositories' class='shortcut-btn'> <i class='fab fa-github-alt'></i> </a>
+        <a href='https://www.codewars.com/dashboard' class='shortcut-btn' id='sh-2'> <i class='fas fa-code'></i> </a>
+        <a href='https://tdchristian.edsby.com/p/BasePublic/73112' class='shortcut-btn' id='sh-3'> <i class='fas fa-graduation-cap'></i> </a>
+        <a href='https://drive.google.com/drive/u/0/my-drive' class='shortcut-btn' id='sh-4'> <i class='fab fa-google-drive'></i> </a>
+        <a href='https://mail.google.com/mail/u/0/?ogbl#inbox' class='shortcut-btn' id='sh-5'> <i class='fas fa-at'></i> </a>
+        <a href='https://discord.com/channels/@me' class='shortcut-btn' id='sh-6'> <i class='fab fa-discord'></i> </a>
+    </div>
+</body>
+
+<footer>
+    <script src='js/script.js' ></script>
+</footer>
+
+</html>
