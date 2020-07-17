@@ -33,6 +33,7 @@ const imageCodes = {
     'scattered clouds': 'cloud',
     'broken clouds': 'cloud-sun',
     'shower rain': 'cloud-showers-heavy',
+    'light rain': 'cloud-showers-heavy',
     'rain': 'cloud-sun-rain',
     'thunderstorm': 'bolt',
     'snow': 'snowflake',
