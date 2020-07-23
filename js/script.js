@@ -26,25 +26,27 @@ function updateTime() {
 updateTime();
 
 
-// making the weather functionality
+// making the weather glyphs functionality
 const imageCodes = {
     'clear sky': 'sun',
     'few clouds': 'cloud-sun',
     'scattered clouds': 'cloud',
     'broken clouds': 'cloud-sun',
+    'overcast clouds': 'cloud-sun',
     'shower rain': 'cloud-showers-heavy',
     'light rain': 'cloud-showers-heavy',
     'rain': 'cloud-sun-rain',
     'thunderstorm': 'bolt',
     'snow': 'snowflake',
     'mist': 'smog',
-},
-    api = 'https://api.openweathermap.org/data/2.5/weather?id=6173577&units=metric&appid=2021dc531ebc043065163783f251a3a9';
+}
+const api = 'https://api.openweathermap.org/data/2.5/weather?id=6173577&units=metric&appid=2021dc531ebc043065163783f251a3a9';
 
 $.getJSON(api, (data) => {
+    // getting the correct FontAwesome icon with a fontawesome class based on the dictionary I made above
     document.getElementById('weather-icon').classList.add(`fa-${imageCodes[data['weather'][0]['description']]}`);
+    // adding the wind icon if the wind speed is over 5 km/h
     if (data['wind']['speed'] > 5) { document.getElementById('wind-icon').classList.add('fa-wind'); }
+    // adding the weather details in text, and roudning the degrees to one decimal place
     document.getElementById('weather-text').innerHTML = ` ${data['weather'][0]['description']}, ${data['main']['temp'].toFixed(1)}ºC`;
-
-    console.log(data['weather'][0]['description']);
 });
