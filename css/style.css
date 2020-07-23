@@ -8,13 +8,12 @@ body {
     position: absolute;
     top: 54%;
     left: 50%;
-    padding: 10px;
     border-radius: 80px;
     background: #7e6930;
     opacity: 0.815;
     transform: translate(-50.2%, -50%);
-    width: 900px;
-    height: 60px;
+    width: 920px;
+    height: 80px;
 }
 
 .search-btn:hover {
@@ -29,7 +28,9 @@ body {
     border:none;
     outline:none;
     font-size: 24px;
-    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -45,10 +46,11 @@ body {
     border: none;
     background: none;
     outline: none;
-    float: left;
-    width: 807px;
-    transform: translate(0%, 23%);
-    padding-left: 20px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translate(0%, -52%);
+    width: 814px;
     color: #212224;
     font-size: 32px;
 }
