@@ -35,6 +35,7 @@ const imageCodes = {
     'overcast clouds': 'cloud-sun',
     'shower rain': 'cloud-showers-heavy',
     'light rain': 'cloud-showers-heavy',
+    'moderate rain': 'cloud-showers-heavy',
     'rain': 'cloud-sun-rain',
     'thunderstorm': 'bolt',
     'snow': 'snowflake',
