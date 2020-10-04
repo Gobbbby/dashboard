@@ -107,7 +107,7 @@ body {
 }
 
 .shortcut-btn:hover {
-    transform: rotateZ(20deg) translate(7%, 3%) scale(1.18);
+    transform: rotateZ(20deg) translate(6%, 3%) scale(1.18);
 }
 
 .shortcut-btn {
