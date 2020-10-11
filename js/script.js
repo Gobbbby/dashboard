@@ -1,7 +1,19 @@
 // making the search bar form functionality
 document.getElementById('search-form').addEventListener('submit', (form) => {
     form.preventDefault();
-    window.location.href = `https://duckduckgo.com/?q=${document.getElementById('search-txt').value}`;
+    let str = document.getElementById('search-txt').value
+
+    if (/\S/.test(str)) {                                               // checks for non-whitespace characters
+        if (/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})/.test(str)) {        // checks for url
+            if (/htt.{1,}:\/\//.test(str)) {                            // checks for http:// or https://
+                window.location.href = str;
+            } else {
+                window.location.href = `https://${str}`;
+            }
+        } else {                                                        // non-url, will duckduckgo search
+            window.location.href = `https://duckduckgo.com/?q=${str}`;
+        }
+    }
 });
 
 
